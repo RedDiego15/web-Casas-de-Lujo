@@ -1,0 +1,50 @@
+/***
+NO OLVIDAR QUE CSS VA HACIENDO CAMBIOS DE ARRIBA HACIA ABAJO, DANDO MAS IMPORTANCIA A
+LOS ULTIMOS CAMBIOS QUE SE REALICES 
+**/
+
+
+html {
+   /** box-sizing: border-box;**/
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px    cambia el valor de pixeles 1rem = 10px **/
+}
+body{ /** se agregara a todo el body completo**/
+    font-family: 'Lato', sans-serif;
+}   
+/**
+GLOBALES
+**/
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto; /**nos sirve para centrar los elementos**/
+}
+/**
+HEADER 
+**/
+.site-header.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center; /**la imagen empieza desde el centro y se expande**/
+    background-size: cover; /**para que la imagen sea vea bien y cubra la pantalla**/
+    height: 100vh;
+    min-height: 60rem; 
+}
+.barra{
+    display: flex; /**es como hacer que el contenedor se convierta en un HBox en java**/
+    justify-content: space-between;
+    padding-top: 2em;
+    align-items: center; /**permite alinear verticalmente los nodos dentro de barra**/
+}
+.navegacion a{ /**al poner la a selecciono los hijos que tiene navegacion que sean del tipo a
+                y se producen los cambios**/
+    color:white;
+    text-decoration: none; /*quita llo subrayo a los link de navegacion*/
+    margin-right: 20px;
+    font-size: 2em;
+}
+.navegacion a:hover{
+    color:grey; /**cambia de color al pasar el mouse sobre los elementos que estan en el nav**/
+}
+
+.navegacion a:last-of-type{ /**buena practica por si acaso el navagador cambia**/
+    margin: 0;
+}
