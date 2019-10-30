@@ -46,7 +46,7 @@ HEADER
     display: flex; /**es como hacer que el contenedor se convierta en un HBox en java**/
     justify-content: space-between;
     padding-top: 3rem;
-    align-items: center; /**permite alinear verticalmente los nodos dentro de barra**/
+    align-items: center; /**permite alinear verticalmente  eso por como esta el flex los nodos dentro de barra**/
 }
 .navegacion a{ /**al poner la a selecciono los hijos que tiene navegacion que sean del tipo a
                 y se producen los cambios**/
@@ -75,4 +75,22 @@ HEADER
     padding-bottom: 2rem;
     max-width: 60rem;
     line-height: 2; /*interlineado para dejar espacion en el h1*/
+}
+/**
+BODY
+**/
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: auto;
+}
+.icono{
+    align-content: center;
+    max-width: auto;
+
 }
