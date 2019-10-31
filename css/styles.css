@@ -16,7 +16,11 @@ body{ /** se agregara a todo el body completo**/
 /**
 GLOBALES
 **/
+img{
+    max-width: 100%;
+}
 .contenedor{
+    width: 95%; /**aun no estoy seguro */
     max-width: 120rem;
     margin: 0 auto; /**nos sirve para centrar los elementos**/
 }
@@ -32,6 +36,9 @@ h3{
 h4{
     font-size: 2.6rem; 
 }
+
+
+
 /**
 UTILIDADES
 **/
@@ -114,9 +121,10 @@ BODY MAIN
 **/
 .contenedor-anuncios{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-between;  
 }
+    
 .anuncio{
-    border: 1px;
+    flex-basis: calc(33.3% -1rem);
+    
 }
