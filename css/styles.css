@@ -5,8 +5,11 @@ LOS ULTIMOS CAMBIOS QUE SE REALICES
 
 
 html {
-   /** box-sizing: border-box;**/
+    box-sizing: border-box;
     font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px    cambia el valor de pixeles 1rem = 10px **/
+}
+*, *:before, *:after { /*es un codigo pra evitar que el padding actue de forma extrana en a e img*/
+    box-sizing: inherit;
 }
 body{ /** se agregara a todo el body completo**/
     font-family: 'Lato', sans-serif;
@@ -51,6 +54,9 @@ UTILIDADES
 }
 .centrar-texto{
     text-align: center;
+}
+.d-block {
+    display: block!important; /*hace que tome todo el espacio disponible*/
 }
 
 /**
@@ -122,9 +128,48 @@ BODY MAIN
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;  
+
+   
 }
     
 .anuncio{
-    flex-basis: calc(33.3% -1rem);
+    flex: 0 0 calc(33.3% - 1rem); /*con esta linea funciona el hacer espacio entre los anuncios de las casas*/
+    border: 1px solid #b5b5b5 ;
+    background-color: #f5f5ff;
     
+}
+.contenido-anuncio {
+    padding: 2rem; /*espacio hacia adentro del contenedor*/
+}
+.contenido-anuncio h3,  /** necesario para remover margin que el navegador suele poner por defecto **/
+.contenido-anuncio p  {
+    margin: 0;
+}
+.precio{
+    color: #72b100;
+    font-weight: 700 ;
+
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+/**
+BOTONES
+**/
+.boton{
+    color: white;
+    font-weight: 700; /*hacemos mas gruesas las letras*/
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem; /*un rem hacia arriba y abajo ...*/
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+.boton-amarillo{
+    background-color: #e08709;
+}
+.boton-verde{
+    background-color: #71b100;
 }
