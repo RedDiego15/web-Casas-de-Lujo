@@ -190,3 +190,20 @@ align-items: center;
 .contenido-contacto p {
     font-size: 1.8rem;    
 }
+/**
+ICONOS
+**/
+.iconos-caracteristicas{
+    list-style-type: none;  /* es para definir el estilo de la vineta que acompana al icono*/
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+    display: flex;
+    flex:1;
+}
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+
+}
