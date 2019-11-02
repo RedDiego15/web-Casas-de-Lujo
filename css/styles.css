@@ -23,7 +23,7 @@ img{
     max-width: 100%;
 }
 .contenedor{
-    width: 95%; /**aun no estoy seguro */
+    width: 95%; 
     max-width: 120rem;
     margin: 0 auto; /**nos sirve para centrar los elementos**/
 }
@@ -66,8 +66,8 @@ HEADER
     background-image: url(../img/header.jpg);
     background-position: center; /**la imagen empieza desde el centro y se expande**/
     background-size: cover; /**para que la imagen sea vea bien y cubra la pantalla**/
-    height: 100vh;
-    min-height: 60rem; 
+    height: 100vh; /*ajusta el tamano de la img de background*/
+    min-height: 60rem; /*necesario poner para cuando abra la pagina desde un celular etc*/
 }
 
 .barra{
@@ -128,8 +128,6 @@ BODY MAIN
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;  
-
-   
 }
     
 .anuncio{
@@ -172,4 +170,23 @@ BOTONES
 }
 .boton-verde{
     background-color: #71b100;
+}
+/**
+SECCION CONTACTANOS
+*/
+.imagen-contacto{
+background-image: url(../img/encuentra.jpg);
+background-position: center; /**la imagen empieza desde el centro y se expande**/
+background-size: cover; /**para que la imagen sea vea bien y cubra la pantalla**/
+height: 53vh;
+min-height: 20rem; /*necesario poner para cuando abra la pagina desde un celular etc*/
+display: flex;
+align-items: center;
+}
+.contenido-contacto{
+    flex: 0 0 95% ; /*detecta cuantos elementos hay y les asigna espacio segun el espacio disponible*/
+    color: white;
+}
+.contenido-contacto p {
+    font-size: 1.8rem;    
 }
