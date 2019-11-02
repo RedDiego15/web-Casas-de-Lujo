@@ -71,7 +71,7 @@ HEADER
 }
 
 .barra{
-    display: flex; /**es como hacer que el contenedor se convierta en un HBox en java**/
+    display: flex; /**es como hacer que el contenedor se convierta en un HBox o Vbox , por default Hbox en java**/
     justify-content: space-between;
     padding-top: 3rem;
     align-items: center; /**permite alinear verticalmente  eso por como esta el flex los nodos dentro de barra**/
@@ -206,4 +206,39 @@ ICONOS
 .iconos-caracteristicas li img{
     margin-right: 2rem;
 
+}
+/**
+SECCION INFERIOR
+*/
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{                /*la parte del blog ocupara el 60% del div en el que esta*/
+    flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+    flex-basis:  calc(40% - 2rem);
+}
+.entrada-blog{
+   margin-bottom: 2rem;
+   display: flex;
+   justify-content: space-between;
+}
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+.entrada-blog .imagen{
+    flex-basis: 40%; /*va ha hacer mas pequena la imagen */
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem); /*importante siempre dejar espacio para realizar las operaciones de calc*/
+}
+.texto-entrada a {
+    color: #000000;
+    text-decoration: none;
+}
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
 }
