@@ -62,12 +62,16 @@ UTILIDADES
 /**
 HEADER 
 **/
-.site-header.inicio{ /*afecta a todo el header*/
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0; /*al hacerle padding al que contiene todo aumenta el espacio que ocupa*/
+}
+.site-header.inicio{  /*afecta a todo el header*/
     background-image: url(../img/header.jpg);
-    background-position: center; /**la imagen empieza desde el centro y se expande**/
-    background-size: cover; /**para que la imagen sea vea bien y cubra la pantalla**/
-    height: 100vh; /*ajusta el tamano de la img de background*/
-    min-height: 60rem; /*necesario poner para cuando abra la pagina desde un celular etc*/
+    background-position: center;    /**la imagen empieza desde el centro y se expande**/
+    background-size: cover;     /**para que la imagen sea vea bien y cubra la pantalla**/
+    height: 100vh;   /*ajusta el tamano de la img de background*/
+    min-height: 60rem;  /*necesario poner para cuando abra la pagina desde un celular etc*/
 }
 
 .barra{
@@ -96,6 +100,7 @@ HEADER
     flex-direction: column; /*para que alinea como columna el contenedor navegacion despues de
                             haber puesto la barra*/
     justify-content: space-between; /*ahora hara espacio verticalmente*/
+    text-align: center;
     
 }
 .contenido-header h1{
@@ -103,6 +108,7 @@ HEADER
     padding-bottom: 2rem;
     max-width: 60rem;
     line-height: 2; /*interlineado para dejar espacion en el h1*/
+    text-align: left;
 }
 /**
 BODY NOSOTROS
