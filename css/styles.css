@@ -242,3 +242,15 @@ SECCION INFERIOR
     margin: 0;
     line-height: 1.4;
 }
+.texto-entrada h4::after{ /*Peseudo elemento esto quiere decir crea un nuevo elemento despues de h4*/
+    content: '';
+    display: block;
+    width: 15rem; /*largo*/
+    height: .5rem; 
+    background-color:#71b100;
+    margin-top:1rem ;
+}
+.texto-entrada span{
+    color:#e08709
+
+}
