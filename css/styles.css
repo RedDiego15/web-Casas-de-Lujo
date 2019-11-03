@@ -149,12 +149,16 @@ BODY MAIN
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;  
+    flex-wrap: wrap;/* hace que no se haga scroll a los lados*/
 }
     
 .anuncio{
-    flex: 0 0 calc(33.3% - 1rem); /*con esta linea funciona el hacer espacio entre los anuncios de las casas*/
+    flex-shrink: 0; /*que no enconja y siempre tomo el tamanio dando en flex*/
+    flex: 0 0 calc(33.3% - 1rem); /*con esta linea funciona el hacer espacio entre los anuncios de las casas los 2 ceros 
+                                    significan flex grow y flex-shrink 0 es para que mantegan sus tamano tal como se les dice*/
     border: 1px solid #b5b5b5 ;
     background-color: #f5f5ff;
+    margin-bottom: 2rem;
     
 }
 .contenido-anuncio {
