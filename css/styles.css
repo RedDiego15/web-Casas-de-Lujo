@@ -253,4 +253,51 @@ SECCION INFERIOR
 .texto-entrada span{
     color:#e08709
 
+
+}
+/**
+testimoniales
+*/
+.testimonial{
+    background: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem; /*divide la imagen y la va haciendo un circulo 50%*/
+
+}
+.testimonial p{
+    text-align: right;
+}
+.testimonial blockquote::before{
+    content: "";
+    background-image: url(../img/comilla.svg);
+    width: 4rem; /*necesario para que aparezca al ser un elemento debo decirle las medidad*/
+    height: 4rem;
+    position: absolute; /*al hijo que quieres posicionar lo pones en absoluto*/
+    left: -2rem;
+}
+.testimonial blockquote{
+    position: relative;
+    padding-left: 5rem;
+    text-align: justify;
+    font-weight: 300;
+}
+/*
+FOOTER
+*/
+.site-footer{
+    background-color:#333333;
+    margin: 0;  
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.copyright{
+    margin: 0;
+    color: white;
 }
