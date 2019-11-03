@@ -128,6 +128,21 @@ BODY NOSOTROS
 .icono h3{ /*solo cambia los h3 que son hijos de icono*/
     text-transform: uppercase;
 }
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*posisiona el contenido dentro del div se le aplica al numero de columnas habra en el grid
+                                            50% 50%  (2,1fr) divide en fracciones*/
+    grid-column-gap: 2rem; /*agrega separacion entre las columnas*/
+}
+.texto-nosotros{
+    text-align: justify;
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin:0;
+    padding: 1rem 0 3rem 0;
+}
 /**
 BODY MAIN
 **/
