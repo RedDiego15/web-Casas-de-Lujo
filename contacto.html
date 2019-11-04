@@ -31,7 +31,69 @@
         <img src="img/destacada3.jpg" alt="destacada3">
 
         <main class="contenedor seccion contenido-centrado">
-            <h2 class="fw300 centrar-texto"> Llenar formulario de contacto</h2>
+            <h2 class="fw-300 centrar-texto"> Llena el formulario de contacto</h2>
+
+            <form class = "contacto"action="">
+                <fieldset>
+                    <legend>Información  Personal</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" required placeholder="Tu Nombre">
+
+                    <label for="correo">E-MAIL: </label>
+                    <input type="mail" required id="correo" placeholder="Tu correo">
+
+                    <label for="telefono">Nombre: </label>
+                    <input type="tel" id="telefono" required placeholder="Tu Telefono">
+
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea name="mensaje" id="mensaje" >
+                    </textarea>
+                </fieldset><!--informacion personal-->
+
+                <fieldset>
+                    <legend>Información Sobre Propiedad</legend>
+
+                    <label for="vende o compra">Vende o Compra </label>
+                    <select  id="vende o compra">
+                        <option value="" disabled selected>--Seleccione--</option>
+                        <option value="vende">Vende</option>
+                        <option value="compra">Compra</option>       
+                    </select>
+
+                    <label for="cantidad">Cantidad: </label>
+                    <input type="number" id = "cantidad"required > <!--para hacer validaciones numericas utilizamos javascript-->
+
+                </fieldset><!--informacion vivienda-->
+
+                <fieldset>
+                    <legend>Contacto</legend>
+
+                    <p>Como desea ser Contactado</p>
+                    <label for="cantidad">Cantidad: </label>
+                    <input type="number" id = "cantidad"required >
+
+                    <div class="formato-tipo-contacto contenido-centrado">
+                        <label for="tel">Teléfono: </label>
+                        <input type="radio" id = "tel" required  value="telefono">
+
+                        <label for="mail"> E-mail: </label>
+                        <input type="radio" id = "mail" value="mail" >
+                    </div>
+                    <p>Si eligio telefono, escoga la fecha y la hora</p>
+                
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" id = "fecha" >
+
+                    <label for="hora">Hora:</label>
+                    <input type="time" id = "hora">
+
+
+                </fieldset><!--info contacto-->
+
+                <input class="boton boton-verde"type="submit" value="Enviar">
+
+            </form>
+
         </main>
 
 
