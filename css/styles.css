@@ -15,6 +15,7 @@ body{ /** se agregara a todo el body completo**/
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 2; /* esto no va en rem solo en enteros*/
+    text-align: justify;
 }   
 /**
 GLOBALES
@@ -58,6 +59,10 @@ UTILIDADES
 .d-block {
     display: block!important; /*hace que tome todo el espacio disponible*/
 }
+.contenido-centrado {
+    max-width: 800px;
+}
+
 
 /**
 HEADER 
@@ -223,14 +228,16 @@ ICONOS
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex:1; /*para que el contenido crezaca siendo limitado por los 500px*/
+    max-width: 50rem;
 }
 .iconos-caracteristicas li{
     display: flex;
-    flex:1;
 }
-.iconos-caracteristicas li img{
+.iconos-caracteristicas li,
+.iconos-caracteristicas img,
+.iconos-caracteristicas p{
     margin-right: 2rem;
-
 }
 /**
 SECCION INFERIOR
@@ -326,3 +333,18 @@ FOOTER
     margin: 0;
     color: white;
 }
+/**
+INTERNAS
+*/
+/*anuncio*/
+
+ .resumen-propiedad{
+     display: flex;
+     justify-content: space-between;
+     align-items: center; /*alinea verticalmente*/
+ }
+ .resumen-propiedad .iconos-caracteristicas{
+     justify-content: start;
+     
+     
+ }
